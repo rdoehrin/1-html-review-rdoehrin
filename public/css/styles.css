@@ -1,25 +1,25 @@
-body {
-    background: darkred;
-	color: white;
-}
+
 
 header {
-    background-color: darkred;
+    background-color: darkblue;
 	padding-top: 30px;
 	padding-bottom: 10px;
 	padding-left: 15px;
     Font-Size: 60px;
-    font-family: "impact", fantasy
+    color: white;
+    font-family: Georgia;
+    text-align: center;
 }
 
 nav {
-	background-color: gray;
+	background-color: lightblue;
 	padding: 10px;
+    text-align: center;
 }
 
 nav a:hover {
-    Color: white;
-	background-color:darkred;
+    Color: darkblue;
+	background-color:white;
 }
 
 main {
@@ -40,19 +40,25 @@ footer {
 }
 
 h2 {
-    font-size: 26px;
-    background-color: whitesmoke;
-    padding: 10px;
+    font-family: Georgia;
+    color: black;
+    font-size: 40px;
+    text-align: center;
 }
     
-h3 {
-    font-family: "impact", fantasy;
-    color: DarkRed;
-    font-size: 30px;
+h1 {
+    font-family: Georgia;
+    color: black;
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline;
 }
 
 p {
-	margin-bottom: 40px;
+    font-family: Georgia;
+    color: black;
+    font-size: 30px;
+    text-align: center;
 }
 
 a {
