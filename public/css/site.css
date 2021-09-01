@@ -1,0 +1,103 @@
+body {
+    background: darkred;
+	color: white;
+}
+
+header {
+    background-color: darkred;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+    Font-Size: 60px;
+    font-family: "impact", fantasy
+}
+
+nav {
+	background-color: gray;
+	padding: 10px;
+}
+
+nav a:hover {
+    Color: white;
+	background-color:darkred;
+}
+
+main {
+	background-color: white;
+	color: black;
+	padding-top: 5px;
+	padding-bottom: 30px;
+	padding-left: 15px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+    font-size: 16px;
+}
+
+footer {
+    background-color: darkred;
+    margin: 0px;
+    padding:10px;
+}
+
+h2 {
+    font-size: 26px;
+    background-color: whitesmoke;
+    padding: 10px;
+}
+    
+h3 {
+    font-family: "impact", fantasy;
+    color: DarkRed;
+    font-size: 30px;
+}
+
+p {
+	margin-bottom: 40px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+/* Forms */
+
+label {
+	font-weight: bold;
+}
+
+input, textarea {
+	margin-top: 10px;
+}
+
+button {
+	padding: 10px;
+	background-color: darkred;
+	color: white;
+}
+
+button, .button {
+    border: 0px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+button, .button:hover{
+    background: gray;
+    }
+
+select {
+    width: 350px;
+    margin-bottom: 20px;
+    }
+        
+option {
+    font-size: large;
+    }
+
+#comments {
+	width: 55%;
+	height: 130px;
+}
