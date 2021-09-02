@@ -23,7 +23,7 @@ nav a:hover {
 }
 
 main {
-	background-color: white;
+	background-color:lightgrey;
 	color: black;
 	padding-top: 5px;
 	padding-bottom: 30px;
@@ -61,7 +61,7 @@ p {
     text-align: center;
 }
 
-a {
+a:link {
 	text-decoration: none;
 	color: white;
 }
