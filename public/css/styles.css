@@ -33,11 +33,6 @@ main {
     font-size: 16px;
 }
 
-footer {
-    background-color: darkred;
-    margin: 0px;
-    padding:10px;
-}
 
 h2 {
     font-family: Georgia;
@@ -59,6 +54,7 @@ p {
     color: black;
     font-size: 30px;
     text-align: center;
+ 
 }
 
 a:link {
@@ -76,34 +72,7 @@ input, textarea {
 	margin-top: 10px;
 }
 
-button {
-	padding: 10px;
-	background-color: darkred;
-	color: white;
-}
-
-button, .button {
-    border: 0px;
-    padding-top: 10px;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-bottom: 10px;
-}
-
-button, .button:hover{
-    background: gray;
-    }
-
-select {
-    width: 350px;
-    margin-bottom: 20px;
-    }
-        
-option {
-    font-size: large;
-    }
-
-#comments {
-	width: 55%;
-	height: 130px;
+#border{
+    border-color: turquoise;
+    border-style: solid;
 }

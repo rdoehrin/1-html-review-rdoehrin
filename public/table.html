@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
   <header>
-      <img src="img/house.png" alt="Cartoon House" width="100">Welcome to my life!<img src="img/House.png" alt="Cartoon House" width="100">
+      <img src="img/house.png" alt="Cartoon House" width="100" onclick="window.open(this.src)">Welcome to my life!<img src="img/House.png" alt="Cartoon House" width="100" onclick="window.open(this.src)">
   </header>
   
   <nav>
@@ -36,62 +36,87 @@
       </thead>
       <tbody>
         <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
+          <th scope="row">The Hobbit</th>
+          <td>J. R. R. Tolkien</td>
+          <td>1937</td>
+          <td>Allen & Unwin</td>
+          <td>563</td>
+          <td>$21.99</td>
         </tr>
         <tr>
-          <th scope="row">2</th>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
+          <th scope="row">The Little Prince</th>
+          <td>Antonie de Saint-Exupery</td>
+          <td>1943</td>
+          <td>Reynold & Hitchcock</td>
+          <td>842</td>
+          <td>$29.99</td>
+
         </tr>
         <tr>
-          <th scope="row">3</th>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
+          <th scope="row">The Da Vinci Code</th>
+          <td>Dan Brown</td>
+          <td>2003</td>
+          <td>298</td>
+          <td>Redberry Prod</td>
+          <td>$9.99</td>
+
         </tr>
         <tr>
-          <th scope="row">4</th>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
+          <th scope="row">The Catcher in the Rye</th>
+          <td>J. D. Salinger</td>
+          <td>1951</td>
+          <td>Louise & Wallace</td>
+          <td>450</td>
+          <td>$12.99</td>
+
         </tr>
         <tr>
-          <th scope="row">5</th>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
+          <th scope="row">You Can Heal Your Life</th>
+          <td>Louise Hay</td>
+          <td>1984</td>
+          <td>Brownston</td>
+          <td>145</td>
+          <td>$5.99</td>
+
         </tr>
         <tr>
-          <th scope="row">6</th>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
+          <th scope="row">Heidi</th>
+          <td>Johanna Spyri</td>
+          <td>1880</td>
+          <td>Maud</td>
+          <td>1219</td>
+          <td>$38.99</td>
+
         </tr>
       </tbody>
     </table>
 
+    <form>
+      <div class="form-group">
+        <label for="Title">Book Title</label>
+        <input type="Text" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="Author">Author</label>
+        <input type="Text" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="Year Published">Year Published</label>
+        <input type="number" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="Publisher">Publisher</label>
+        <input type="Publisher" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="Page Count">Page Count</label>
+        <input type="number" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="MSRP">MSRP</label>
+        <input type="number" class="form-control">
+      </div>
+    </form>
 
     
     
