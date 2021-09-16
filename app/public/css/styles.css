@@ -33,6 +33,11 @@ main {
     font-size: 16px;
 }
 
+.border-four {
+	margin-top: 4.5cm;
+	margin-bottom: 4.5cm;
+}
+
 
 h2 {
     font-family: Georgia;
