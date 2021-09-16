@@ -11,16 +11,6 @@ header {
     text-align: center;
 }
 
-nav {
-	background-color: lightblue;
-	padding: 10px;
-    text-align: center;
-}
-
-nav a:hover {
-    Color: darkblue;
-	background-color:white;
-}
 
 main {
 	background-color:lightgrey;
@@ -38,6 +28,15 @@ main {
 	margin-bottom: 4.5cm;
 }
 
+.border-two {
+	margin-top: 2.25cm;
+	
+}
+
+.border-one {
+	margin-top: 1cm;
+	
+}
 
 h2 {
     font-family: Georgia;

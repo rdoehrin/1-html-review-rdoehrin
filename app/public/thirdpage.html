@@ -12,8 +12,20 @@
       <img src="img/house.png" alt="Cartoon House" width="100" onclick="window.open(this.src)">Welcome to my life!<img src="img/House.png" alt="Cartoon House" width="100" onclick="window.open(this.src)">
   </header>
   
-  <nav>
-      <a href="index.html">My Profile</a> | <a href="table.html">My Favorite Books</a> | <a href="thirdpage.html">My Travel</a> 
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="index.html">My Profile</a>
+          <a class="nav-link" href="table.html">My Favorite Books</a>
+          <a class="nav-link" href="thirdpage.html">My Travel</a>
+        </div>
+      </div>
+    </div>
   </nav>
   <title>My Travel</title>
 
@@ -21,7 +33,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm">
-          <br><br><br><br><h2>Hawaii</h2><br>
+          <h2 class="border-two">Hawaii</h2><br>
           <p><img src="img/Hawaii.jpg_fit=scale" alt="Hawaii" width="300" onclick="window.open('https://www.forbes.com/sites/willmcgough/2021/08/24/hawaii-travel-update-governor-tells-tourists-not-to-visit-says-lockdown-is-possible-amidst-covid-19-surge/?sh=21a2ebf41394', '_blank')"></p><sub>https://www.forbes.com/sites/willmcgough/2021/08/24/hawaii-travel-update-governor-tells-tourists-not-to-visit-says-lockdown-is-possible-amidst-covid-19-surge/?sh=21a2ebf41394</sub>
           <p>Meh...</p> 
         </div>
@@ -32,9 +44,9 @@
           <p>Decent!</a></p> 
         </div>
         <div class="col-sm">
-          <br><br><br><br><h2>Indiana</h2><br>
+          <h2 class="border-two">Indiana</h2><br>
           <p><img src="img/corn.jpg" alt="Indiana" width="300" onclick="window.open('https://www.morningagclips.com/indiana-annual-crop-summary-2/', '_blank')"></p><sub>https://www.morningagclips.com/indiana-annual-crop-summary-2/</sub>
-          <p>WOW!</p> 
+          <p class="border-one">WOW!</p> 
         </div>
       </div>
     </div>
