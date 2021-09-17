@@ -36,7 +36,7 @@
     <div id="randomUser" class="container">
       <div class="row">
         <div class="col-6">
-          <p class="border-four"> I am {{ person.dob.age }} years old. </p> <p class="border-four">  I was born on {{ person.dob.date }}.</p> <p>I was born in {{ person.location.country }}. </p>
+          <p class="border-four"> I am {{ person.dob.age }} years old. </p> <p class="border-four">  I was born on {{person.dob.date[5] + person.dob.date[6] +person.dob.date[4] +person.dob.date[8] + person.dob.date[9] +person.dob.date[7] +  person.dob.date[0] + person.dob.date[1] + person.dob.date[2] + person.dob.date[3]}}.</p> <p>I was born in {{ person.location.country }}. </p>
         </div>
 
         <div class="col-6">
