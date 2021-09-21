@@ -37,12 +37,16 @@
       <div class="row">
         <div class="col-6">
           <p class="border-four"> I am {{ person.dob.age }} years old. </p> <p class="border-four">  I was born on {{ prettyBirthday}}. </p> <p>I am from {{ person.location.country }}.</p>
+          <form @submit.prevent="onRefresh">
+            <button type="submit">Refresh</button>
+          </form>
         </div>
 
         <div class="col-6">
           <h1>All About Me</h1><br>
           <h2 id="border">{{ person.name.first }} {{ person.name.last}} </h2><br>
           <img v-bind:src="person.picture.large" alt="Tom" width="500" onclick="window.open('https://randomuser.me/', '_blank')" >
+
           <p>Contact me: <a v-bind:href="'mailto:'+person.email"> {{ person.email }} </a></p> 
           <sub>https://randomuser.me/</sub>
         </div>
