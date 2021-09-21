@@ -8,6 +8,12 @@ const Site = {
 
       }
   },
+  computed: {
+    prettyBirthday() {
+        return dayjs(this.person.dob.date)
+        .format('MMM. D YYYY')
+    }
+},
   created() {
 
       fetch('https://randomuser.me/api/')
