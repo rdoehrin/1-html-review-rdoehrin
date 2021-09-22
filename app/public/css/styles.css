@@ -84,7 +84,7 @@ input, textarea {
     border-color: turquoise;
     border-style: solid;
 }
-//Sort from http://tristen.ca/tablesort/demo/
+
 th[role=columnheader]:not(.no-sort) {
 	cursor: pointer;
 }
