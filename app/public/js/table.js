@@ -4,7 +4,8 @@ const Records = {
   data() {
     return {
           "records": [],
-          "selectedRecord": null
+          "selectedRecord": null,
+          "bookForm": {}
       }
   },
   computed: {
@@ -33,6 +34,28 @@ const Records = {
               console.error(err)
           })
       },
+      postNewBook(evt) {
+        //this.bookForm.studentId = this.selectedStudent.id;        
+        
+        console.log("Posting!", this.bookForm);
+      
+        fetch('api/records/create.php', {
+            method:'POST',
+            body: JSON.stringify(this.bookForm),
+            headers: {
+              "Content-Type": "application/json; charset=utf-8"
+            }
+          })
+          .then( response => response.json() )
+          .then( json => {
+            console.log("Returned from post:", json);
+            // TODO: test a result was returned!
+            this.records = json;
+            
+            // reset the form
+            this.bookForm = {};
+          });
+        } 
   },
   created() {
       this.fetchRecordData();
