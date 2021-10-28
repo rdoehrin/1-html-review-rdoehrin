@@ -31,17 +31,11 @@ $db = DbConnection::getConnection();
 // Step 2: Create & run the query
 // Note the use of parameterized statements to avoid injection
 $stmt = $db->prepare(
-  'INSERT INTO records (title, author, year_published, publisher, page_count, msrp)
-  VALUES (?, ?, ?, ?, ?, ?)'
+  'DELETE FROM records WHERE book_id = ?'
 );
 
 $stmt->execute([
-  $_POST['title'],
-  $_POST['author'],
-  $_POST['year_published'],
-  $_POST['publisher'],
-  $_POST['page_count'],
-  $_POST['msrp']
+  $_POST['book_id']
 ]);
 
 // Get auto-generated PK from DB

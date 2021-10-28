@@ -56,47 +56,54 @@
           <td>{{ r.page_count }}</td>
           <td>{{ r.msrp }}</td>
           <td></td>
+          <td>
+            <button type="button" 
+              class="btn btn-outline-secondary btn-sm"
+              v-on:click="selectBookToEdit(r)">Edit</button>
+            <button type="button" class="btn btn-outline-secondary btn-sm"
+              v-on:click="postDeleteBook(r)">Delete</button>
+          </td>
       </tr>
       </tbody>
     </table>
 
-    <form v-on:submit.prevent="postNewBook">
+    <h3>{{ selectedBook === null ? "Add " : "Edit " }} Book</h3>
+    <form v-on:submit.prevent="postBook">
       <div class="mb-3">
-        <label for="title" class ="form-label">Book Title</label>
-        <input type="text" v-model="bookForm.title" class="form-control" id="title">
+        <label for="title" class ="form-label">Book Title<span class="reqd">*</span></label>
+        <input type="text" v-model="bookForm.title" class="form-control" id="title" required="required">
       </div>
       <div class="mb-3">
-        <label for="author" class ="form-label">Author</label>
-        <input type="text" v-model="bookForm.author" class="form-control" id="author">
+        <label for="author" class ="form-label">Author<span class="reqd">*</span></label>
+        <input type="text" v-model="bookForm.author" class="form-control" id="author" required="required">
       </div>
       <div class="mb-3">
-        <label for="year_published" class ="form-label">Year Published</label>
-        <input type="number" v-model="bookForm.year_published" class="form-control" id="year_published">
+        <label for="year_published" class ="form-label">Year Published<span class="reqd">*</span></label>
+        <input type="number" v-model="bookForm.year_published" class="form-control" id="year_published" required="required">
       </div>
       <div class="mb-3">
-        <label for="publisher" class ="form-label">Publisher</label>
-        <input type="text" v-model="bookForm.publisher" class="form-control" id="publisher">
+        <label for="publisher" class ="form-label">Publisher<span class="reqd">*</span></label>
+        <input type="text" v-model="bookForm.publisher" class="form-control" id="publisher" required="required">
       </div>
       <div class="mb-3">
-        <label for="page_count" class ="form-label">Page Count</label>
-        <input type="number" v-model="bookForm.page_count" class="form-control" id="page_count">
+        <label for="page_count" class ="form-label">Page Count<span class="reqd">*</span></label>
+        <input type="number" v-model="bookForm.page_count" class="form-control" id="page_count" required="required">
       </div>
       <div class="mb-3">
-        <label for="msrp" class ="form-label">MSRP</label>
-        <input type="number" v-model="bookForm.msrp" class="form-control" id="msrp">
+        <label for="msrp" class ="form-label">MSRP<span class="reqd">*</span></label>
+        <input type="number" v-model="bookForm.msrp" class="form-control" id="msrp" required="required">
       </div>
       <br>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" value="submit" class="btn btn-primary">{{ selectedBook === null ? "Add " : "Edit " }} Book</button>
+      <button type="button" class="btn btn-outline-secondary" v-if="selectedBook" v-on:click="resetBookForm">Cancel</button>
     </form>
     
   </div> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-
-    <script src="js/tablesort.min.js"></script>
+  
+    
     <script src="js/table.js"></script>
 
-    <script>
-      new Tablesort(document.getElementById('bookTable'));
-    </script>
+    
   </body>
 </html>
